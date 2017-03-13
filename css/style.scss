@@ -1,0 +1,25 @@
+---
+---
+h1 + p {
+    margin-top: -1.2em;
+}
+
+
+
+a.link {
+    position: absolute;
+    left: 0em;
+    top: 0px
+}
+
+ul.posts {
+    list-style: none;
+    padding-left: 0;
+    & > li {
+        border: solid gray 1px;
+        margin: 0.5em;
+        position: relative;
+        padding: 0.1em 0.5em;
+    }
+}
+

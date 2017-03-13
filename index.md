@@ -5,7 +5,6 @@ layout: "default"
 <small>Thoughts, snippets and maybe something interesting</small>
 
 {% assign post_groups = site.posts | group_by_exp:"item", "item.date | date_to_long_string" %}
-{{ post_groups | inspect }}
 {% for post_group in post_groups %}
 <h2>{{post_group.name}}</h2>
 <ul class="posts">

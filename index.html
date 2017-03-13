@@ -1,9 +1,6 @@
 ---
 layout: "default"
 ---
-<h1>Hemera's Thoughts</h1>
-<small>Thoughts, snippets and maybe something interesting</small>
-
 {% assign post_groups = paginator.posts | group_by_exp:"item", "item.date | date_to_long_string" %}
 {% for post_group in post_groups %}
 <h2>{{post_group.name}}</h2>

@@ -1,2 +1,5 @@
 timezone: Europe/Berlin
 title: "Hemera's Space"
+paginate: 100
+paginate_path: "/older/:num/"
+gems: [jekyll-paginate]

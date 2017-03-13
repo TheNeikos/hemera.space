@@ -4,7 +4,7 @@ layout: "default"
 <h1>Hemera's Thoughts</h1>
 <small>Thoughts, snippets and maybe something interesting</small>
 
-{% assign post_groups = site.posts | group_by_exp:"item", "item.date | date_to_long_string" %}
+{% assign post_groups = paginator.posts | group_by_exp:"item", "item.date | date_to_long_string" %}
 {% for post_group in post_groups %}
 <h2>{{post_group.name}}</h2>
 <ul class="posts">
@@ -16,3 +16,10 @@ layout: "default"
     {% endfor  %}
 </ul>
 {% endfor %}
+
+{% if previous_page %}
+    <a href="{{ paginator.previous_page_path }}">Newer</a>
+{% endif %}
+{% if next_page %}
+    <a href="{{ paginator.next_page_path }}">Older</a>
+{% endif %}

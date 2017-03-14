@@ -1,4 +1,4 @@
-timezone: Europe/Berlin
+timezone: UTC
 title: "Hemera's Space"
 paginate: 100
 paginate_path: "/older/:num/"

@@ -20,6 +20,8 @@ a.link {
 ul.posts {
     list-style: none;
     padding-left: 0;
+    width: 70%;
+    margin: 0 auto;
     & > li {
         border: solid gray 1px;
         margin: 0.5em;
